@@ -14,8 +14,8 @@ public class IOTasks {
     }
 
     private static int easyAmount(String fileName) throws FileNotFoundException {
-        int sum = 0;
         File f = new File(fileName);
+        int sum = 0;
         try (Scanner in = new Scanner(f, "utf8")) {
             while (in.hasNext()) {
                 int temp = in.nextInt();
