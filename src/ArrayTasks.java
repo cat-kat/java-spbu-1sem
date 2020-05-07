@@ -10,6 +10,7 @@ public class ArrayTasks {
 
         System.out.println(average(example));
 
+
         int[] x = {20, 10, 30, 40};
         int[] y = sortReverse(x);
         System.out.println(Arrays.toString(x)); // печатает 20 10 30
