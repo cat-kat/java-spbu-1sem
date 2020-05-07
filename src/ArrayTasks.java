@@ -42,6 +42,7 @@ public class ArrayTasks {
     }
 
     private static int[] sortReverse(int[] a) {
+
         int n = a.length;
         int[] b = Arrays.copyOf(a, n);
         Arrays.sort(b);
