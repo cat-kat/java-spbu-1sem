@@ -15,7 +15,6 @@ public class RegularExpr {
         System.out.println(replaceDash("Какая-то сине-зеленовая трава"));
         System.out.println(countKOT("Кот который КОТ"));
         // System.out.println(increaseIntFromStr("resources/nums_2.txt"));
-
     }
 
     private static boolean myIsEmail(String s) {
