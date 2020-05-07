@@ -29,7 +29,6 @@ public class ArrayTasks {
             for (int j = 0; j < a.length; j++) {
                 if (i != j && a[i] == a[j])
                     return true;
-
             }
         }
         return false;
@@ -42,7 +41,6 @@ public class ArrayTasks {
     }
 
     private static int[] sortReverse(int[] a) {
-
         int n = a.length;
         int[] b = Arrays.copyOf(a, n);
         Arrays.sort(b);
