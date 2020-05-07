@@ -7,6 +7,7 @@ public class PrimalityTest {
         System.out.println(isEasy(69));
     }
 
+
     private static boolean isEasy(int n) {
         if ((n == 1) || (n == 2)) return true;
         for (int i = 2; i < n-1; i++) {
