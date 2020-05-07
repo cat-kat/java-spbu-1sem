@@ -12,7 +12,6 @@ public class TwoDimensionalArrayTask {
         System.out.println("============ Заполним столбцы: =========");
         fillFirstAndLastColumns(c, '#');
         printTable(c);
-
     }
 
     private static char[][] createTable(int n, char s) {
