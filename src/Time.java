@@ -20,11 +20,11 @@ public class Time {
     }
 
     public boolean isEvening() {
-        return hours >= 16 && hours < 19;
+        return hours >= 16 && hours < 21;
     }
 
     public boolean isNight() {
-        return hours >= 19;
+        return hours >= 21;
     }
 
     public String sayHello() {
