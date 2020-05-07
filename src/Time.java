@@ -1,6 +1,6 @@
 public class Time {
-    public int hours;
-    public int minutes;
+    private int hours;
+    private int minutes;
 
     Time(int hours, int minutes) {
         this.minutes = minutes;
