@@ -14,8 +14,6 @@ public class ArrayTasks {
         int[] y = sortReverse(x);
         System.out.println(Arrays.toString(x)); // печатает 20 10 30
         System.out.println(Arrays.toString(y));// печатает 30 20 10
-
-
     }
 
     private static int[] parity(int n) {
