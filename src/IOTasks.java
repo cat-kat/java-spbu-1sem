@@ -50,7 +50,6 @@ public class IOTasks {
     }
 
     private static void grammaText(String fileIn, String fileOut) throws Exception {
-
         File f = new File(fileIn);
         File result = new File(fileOut);
         try (Scanner in = new Scanner(f, "utf8")) {
