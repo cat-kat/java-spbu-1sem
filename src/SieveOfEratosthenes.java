@@ -18,7 +18,6 @@ public class SieveOfEratosthenes {
             for (int i = 2 * p; i < n; i++) {
                 if (i % p == 0) {
                     sieve[i - 2] = 0;
-
                 }
             }
             for (int i = 0; i < sieve.length; i++) {
