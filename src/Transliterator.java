@@ -1,3 +1,8 @@
+import java.io.File;
+import java.io.PrintStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class Transliterator {
     public static final String[] ICAO_DOC_9303 = {"a", "b", "v", "g", "d", "e", "yo", "zh", "z", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "f", "x", "cz", "ch", "sh", "shh", "``", "y`", "`", "e`", "yu", "ya"};
     public static final char[] RUS = {'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'};
@@ -33,6 +38,13 @@ public class Transliterator {
             result += translateOneSymbol(in.charAt(i));
         }
         return result;
+    }
+
+    public void translateFile(String input, String output) throws Exception {
+        String in = Files.readString(Paths.get(input));
+        try (PrintStream write = new PrintStream(new File(output), "utf8")) {
+            write.println(translate(in));
+        }
     }
 
     private String normRegister(char symb, String in) {

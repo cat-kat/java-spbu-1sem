@@ -1,5 +1,5 @@
 public class ExperimentsWithTransliterator {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         char[] rus = {'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'};
         String[] eng = {"a", "b", "v", "g", "d", "e", "e", "zh", "z", "i", "i", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "f", "kh", "ts", "ch", "sh", "shch", "ie", "y", "", "e", "iu", "ia"};
         //тесты 1
@@ -32,5 +32,8 @@ public class ExperimentsWithTransliterator {
         System.out.println(r.translate("Яблоко")); // Yabloko
         System.out.println(r.translate("ПАРАШЮТ")); // PARAShYuT
         System.out.println(r.translate("Сложная строка с объявлением")); // Slozhnaya stroka s ob``yavleniem
+
+        // тесты 3
+        t.translateFile("exam/a.txt", "exam/b.txt");
     }
 }
