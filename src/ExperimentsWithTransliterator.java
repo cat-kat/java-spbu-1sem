@@ -28,10 +28,9 @@ public class ExperimentsWithTransliterator {
 
         // тесты 2.2
         Transliterator r = Transliterator.createICAO_DOC_9303();
-        System.out.println(r.translate("Катя")); // Katya
-        System.out.println(r.translate("Яблоко")); // Yabloko
-        System.out.println(r.translate("ПАРАШЮТ")); // PARAShYuT
-        System.out.println(r.translate("Сложная строка с объявлением")); // Slozhnaya stroka s ob``yavleniem
+        System.out.println(r.translate("Катя")); // Katia
+        System.out.println(r.translate("Яблоко")); // Iabloko
+        System.out.println(r.translate("ПАРАШЮТ")); // PARAShIuT
 
         // тесты 3
         t.translateFile("exam/a.txt", "exam/b.txt");
